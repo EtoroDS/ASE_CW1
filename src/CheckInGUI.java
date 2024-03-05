@@ -25,6 +25,13 @@ public class CheckInGUI extends JFrame {
                     status.setVisible(true);
                     return;
                 }
+                if (!bookingReferenceTextField.getText().trim().matches("[a-zA-Z0-9]{6}")){
+                    status.setText("<html><font color = 'red'>"
+                            + "Invalid booking reference!</font>"
+                            + "</html>");
+                    status.setVisible(true);
+                    return;
+                }
                 if(lastNameTextField.getText().trim().isEmpty()) {
                     status.setText("<html><font color = 'red'>"
                             + "Please supply a last name!</font>"
