@@ -31,4 +31,28 @@ class BaggageTest {
         Baggage baggage = new Baggage(10.0, 20.0, 30.0, 5.0);
         assertEquals(3000.0, baggage.getVolume(), 0.01);
     }
+    @Test
+    public void testGetHeight() {
+        Baggage baggage = new Baggage(10.0, 5.0, 3.0, 2.0);
+        assertEquals(Double.valueOf(5.0), baggage.getHeight());
+    }
+
+    @Test
+    public void testGetLength() {
+        Baggage baggage = new Baggage(10.0, 5.0, 3.0, 2.0);
+        assertEquals(Double.valueOf(3.0), baggage.getLength());
+    }
+
+    @Test
+    public void testGetBreath() {
+        Baggage baggage = new Baggage(10.0, 5.0, 3.0, 2.0);
+        assertEquals(Double.valueOf(2.0), baggage.getBreath());
+    }
+
+
+    @Test
+    public void testGetWeight() {
+        Baggage baggage = new Baggage(10.0, 5.0, 3.0, 2.0);
+        assertEquals(Double.valueOf(10.0), baggage.getWeight());
+    }
 }
