@@ -36,10 +36,10 @@ class ReportTest {
         reportRepository.insertRecords(flightData);
 
         // Check if the reportRepo has one report
-        assertEquals(1, reportRepository.reportRepo.size());
+        assertEquals(1, reportRepository.getReportRepo().size());
 
         // Check if the report in the reportRepo has the expected values
-        Report insertedReport = reportRepository.reportRepo.get(0);
+        Report insertedReport = reportRepository.getReportRepo().get(0);
         assertEquals("TestFlight", insertedReport.getFlightCode());
         assertEquals(4, insertedReport.getTotalCheckedin());  // Corrected value
         assertEquals(120.0, insertedReport.getTotalBaggageWeight(), 0.001);
@@ -51,7 +51,7 @@ class ReportTest {
     public void testExportRecords() {
             // Create a test report
             Report testReport = new Report("TestFlight", 100, 50.0, 30.0, 0.0, "Within capacity");
-            reportRepository.reportRepo.add(testReport);
+            reportRepository.getReportRepo().add(testReport);
 
             // Redirect System.out to capture console output
             ByteArrayOutputStream outContent = new ByteArrayOutputStream();

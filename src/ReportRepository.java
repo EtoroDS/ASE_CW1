@@ -1,6 +1,5 @@
 import org.jetbrains.annotations.NotNull;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,6 +9,10 @@ import java.util.Map;
 
 public class ReportRepository {
     private List<Report> reportRepo = new ArrayList<>();
+
+    public List<Report> getReportRepo() {
+        return reportRepo;
+    }
 
     public void insertRecords(@NotNull Map<String, Flight> flightData){
         String remarks ;
