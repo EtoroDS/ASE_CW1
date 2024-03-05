@@ -1,0 +1,12 @@
+bookingRef,firstName,lastName,flightCode,checkedIn
+FGJU76,Abdulmalik,Ibrahim,ABC123,true
+RGGT67,Warinton,Cosomos,ABC123,false
+GHJI34,Dal,harley,ABC123,false
+XYZ45E,Jacobs,Ikedi,XYZ456,true
+DEF67F,Etoro,Ekong,XYZ456,false
+MNO89G,Wilson,Dagah,DEF789,false
+QRS10H,Elizabeth,Joshua,DEF789,true
+JKL23I,John,Doe,DEF789,false
+VWX45J,James,Arthur,GHI012,false
+STU67K,Sandra,Queen,GHI012,true
+RST89L,Favour,King,GHI012,true

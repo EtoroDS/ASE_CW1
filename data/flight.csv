@@ -1,0 +1,5 @@
+flightCode,destination,departureTime,carrier,capacity,allowedBaggageWeight,allowedBaggageVolume,maxBaggageWeight,maxBaggageVolume,excessBaggageFee,totalCheckedIn,totalBaggageWeight,totalBaggageVolume,totalCollectedExcessBaggageFee
+ABC123,New York,2024-02-05T08:00:00,American Airlines,200,25.0,10.0,30.0,12.0,50.0,150,4500.0,1800.0,200.0
+XYZ456,London,2024-02-05T10:30:00,British Airways,180,20.0,8.0,25.0,10.0,40.0,120,3600.0,1500.0,120.0
+DEF789,Paris,2024-02-06T09:15:00,Air France,150,18.0,7.5,22.0,9.0,35.0,100,3000.0,1300.0,80.0
+GHI012,Tokyo,2024-02-06T14:45:00,Japan Airlines,220,30.0,12.0,35.0,15.0,60.0,180,5400.0,2000.0,250.0
