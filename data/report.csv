@@ -1,0 +1,5 @@
+flightCode,totalCheckedIn,totalBaggageWeight,totalBaggageVolume,totalExcessChargeCollected,remarks
+DEF789,100,3000.00,1300.00,80.00,The flight has exceeded both it's maximum weight and volume limit
+XYZ456,120,3600.00,1500.00,120.00,The flight has exceeded both it's maximum weight and volume limit
+GHI012,180,5400.00,2000.00,250.00,The flight has exceeded both it's maximum weight and volume limit
+ABC123,150,4500.00,1800.00,200.00,The flight has exceeded both it's maximum weight and volume limit

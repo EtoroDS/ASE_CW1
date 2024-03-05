@@ -30,11 +30,11 @@ public class Baggage  {
         return breath;
     }
 
-    public Double getVolume( ){
+    public Double getVolume(){
         return height * length * breath;
     }
 
-    public Double getWeight( ) {
+    public Double getWeight() {
         return weight;
     }
 

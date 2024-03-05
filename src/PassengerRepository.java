@@ -5,7 +5,7 @@ public class PassengerRepository {
     private Map<String, Passenger> passengers = new HashMap<>();
 
     public PassengerRepository() {
-        String csvFilePath ="src/data.csv";
+        String csvFilePath ="data/passenger.csv";
         try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
             String line;
             boolean isFirstLine = true;

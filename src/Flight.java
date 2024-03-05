@@ -17,15 +17,15 @@ public class Flight {
 
     public Flight(String flightCode, String destination, LocalDateTime departureTime, String carrier, Integer capacity, Double allowedBaggageWeight, Double allowedBaggageVolume, Double maxBaggageWeight, Double maxBaggageVolume, Double excessBaggageFee, Integer totalCheckedIn, Double totalBaggageWeight, Double totalBaggageVolume, Double totalCollectedExcessBaggageFee ) {
         if (flightCode == null || destination == null || departureTime == null || carrier == null) {
-            throw new IllegalArgumentException("Parameters cannot be null");
+            throw new IllegalArgumentException("Parameters flightCode, destination, departureTime, carrier cannot be null");
         }
 
         if (flightCode.trim().isEmpty() || destination.trim().isEmpty() || carrier.trim().isEmpty()) {
-            throw new IllegalArgumentException("String parameters cannot be empty");
+            throw new IllegalArgumentException("String parameters flightCode, destination, carrier cannot be empty");
         }
 
         if (capacity <= 0 || allowedBaggageWeight <= 0 || allowedBaggageVolume <= 0 || maxBaggageWeight <= 0 || maxBaggageVolume <= 0 || excessBaggageFee < 0 || totalCheckedIn < 0 || totalBaggageWeight < 0 || totalBaggageVolume < 0 || totalCollectedExcessBaggageFee < 0) {
-            throw new IllegalArgumentException("Numeric parameters must be positive");
+            throw new IllegalArgumentException("Numeric parameters capacity, allowedBaggageWeight, allowedBaggageVolume, maxBaggageWeight, maxBaggageVolume, excessBaggageFee, totalCheckedIn must be positive");
         }
 
 
