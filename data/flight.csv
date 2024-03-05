@@ -1,0 +1,2 @@
+flightCode,destination,carrier,capacity,allowedBaggageWeight,allowedBaggageVolume,maxBaggageWeight,maxBaggageVolume,excessBaggageFee
+02xvy,calagari,montblanc,1000,23.0,100.0,700.0,1000.0,10.0
