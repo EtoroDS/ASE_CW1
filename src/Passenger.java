@@ -8,16 +8,15 @@ public class Passenger {
     public Passenger(String bookingRef, String flightCode, String firstName, String lastName, Boolean checkedIn) {
 
         if (bookingRef == null || flightCode == null || firstName == null || lastName == null || checkedIn == null) {
-            throw new IllegalArgumentException("Parameters cannot be null");
+            throw new IllegalArgumentException("Parameters  bookingRef, flightCode, firstName, lastName, checkedIn cannot be null");
         }
 
-
         if (bookingRef.trim().isEmpty() || flightCode.trim().isEmpty() || firstName.trim().isEmpty() || lastName.trim().isEmpty()) {
-            throw new IllegalArgumentException("String parameters cannot be empty");
+            throw new IllegalArgumentException("String parameters bookingRef, flightCode, firstName, lastName cannot be empty");
         }
 
         if (!lastName.trim().matches("[a-zA-Z:-]+") || !firstName.trim().matches("[a-zA-Z:-]+")) {
-            throw new IllegalArgumentException("Invalid name input");
+            throw new IllegalArgumentException("Invalid name input for lastName or firstName");
         }
 
         this.bookingRef = bookingRef;

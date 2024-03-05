@@ -41,11 +41,11 @@ public class ReportRepository {
     }
 
     public void exportRecords(){
-        String csvFilePath = "/Users/wilsondagah/Downloads";
-        File directory = new File(csvFilePath.substring(0, csvFilePath.lastIndexOf(File.separator)));
-        if (!directory.exists()) {
-            directory.mkdirs();
-        }
+        String csvFilePath = "data/report.csv";
+//        File directory = new File(csvFilePath.substring(0, csvFilePath.lastIndexOf(File.separator)));
+//        if (!directory.exists()) {
+//            directory.mkdirs();
+//        }
         try (PrintWriter writer = new PrintWriter(new FileWriter(csvFilePath))) {
             // Write headers
             writer.println("flightCode,totalCheckedIn,totalBaggageWeight,totalBaggageVolume,totalExcessChargeCollected,remarks");
@@ -67,8 +67,4 @@ public class ReportRepository {
         }
 
     }
-    public List<Report> getReportRepo() {
-        return reportRepo;
-    }
-
 }

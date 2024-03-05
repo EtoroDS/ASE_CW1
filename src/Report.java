@@ -7,6 +7,19 @@ public class Report {
     private String remarks;
 
     public Report(String flightCode, Integer totalCheckedin, Double totalBaggageWeight, Double totalBaggageVolume, Double totalExcessCharges, String remarks) {
+
+        if (flightCode == null || remarks == null) {
+            throw new IllegalArgumentException("flightCode and remarks cannot be null");
+        }
+
+        if (flightCode.trim().isEmpty() || remarks.trim().isEmpty()) {
+            throw new IllegalArgumentException("flightCode and remarks cannot be empty");
+        }
+
+        if (totalCheckedin < 0 || totalBaggageWeight < 0.0 || totalBaggageVolume < 0.0 || totalExcessCharges < 0.0) {
+            throw new IllegalArgumentException("Numeric parameters totalCheckedin, totalBaggageWeight, totalBaggageVolume must be non-negative");
+        }
+
         this.flightCode = flightCode;
         this.totalCheckedin = totalCheckedin;
         this.totalBaggageWeight = totalBaggageWeight;

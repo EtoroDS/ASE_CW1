@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class FlightRepository {
     private Map<String, Flight> flights = new HashMap<>();
-    public FlightRepository( ) {
-        String csvFilePath ="src/flight.csv";
+    public FlightRepository() {
+        String csvFilePath ="data/flight.csv";
         try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
             String line;
             boolean isFirstLine = true;
