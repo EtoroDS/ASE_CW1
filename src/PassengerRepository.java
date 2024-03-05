@@ -46,7 +46,7 @@ public class PassengerRepository {
 
     public Passenger findByBookingRef(String bookingRef){
       for (Map.Entry<String, Passenger> entry : passengers.entrySet()) {
-           if (entry.getKey().equals(bookingRef)){
+           if (entry.getKey().equalsIgnoreCase(bookingRef)){
                return entry.getValue();
            }
       }
@@ -55,7 +55,7 @@ public class PassengerRepository {
 
     public void checkInByBookingRef(String bookingRef){
         for (Map.Entry<String, Passenger> entry : passengers.entrySet()) {
-            if (entry.getKey().equals(bookingRef)){
+            if (entry.getKey().equalsIgnoreCase(bookingRef)){
                 entry.getValue().setCheckedIn(true);
             }
         }

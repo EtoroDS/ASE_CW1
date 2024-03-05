@@ -19,6 +19,10 @@ public class Passenger {
             throw new IllegalArgumentException("Invalid name input for lastName or firstName");
         }
 
+        if (!bookingRef.matches("[a-zA-Z0-9]{6}")){
+            throw new IllegalArgumentException("Invalid booking reference");
+        }
+
         this.bookingRef = bookingRef;
         this.flightCode = flightCode;
         this.firstName = firstName;
