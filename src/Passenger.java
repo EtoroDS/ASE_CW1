@@ -29,6 +29,7 @@ public class Passenger {
         this.lastName = lastName;
         this.checkedIn = checkedIn;
     }
+    
     public String getBookingRef( ) {
         return bookingRef;
     }

@@ -50,6 +50,77 @@ public class FlightTest {
     }
 
     @Test
+    public void testGetFlightCode() {
+        assertEquals("ABC123", flight.getFlightCode());
+    }
+
+    @Test
+    public void testGetDestination() {
+        assertEquals("New York", flight.getDestination());
+    }
+
+    @Test
+    public void testGetDepartureTime() {
+        assertNotNull(flight.getDepartureTime());
+    }
+
+    @Test
+    public void testGetCarrier() {
+        assertEquals("AirlineXYZ", flight.getCarrier());
+    }
+
+    @Test
+    public void testGetCapacity() {
+        assertEquals(Integer.valueOf(150), flight.getCapacity());
+    }
+
+    @Test
+    public void testGetMaxBaggageWeight() {
+        assertEquals(Double.valueOf(25.0), flight.getMaxBaggageWeight());
+    }
+
+    @Test
+    public void testGetMaxBaggageVolume() {
+        assertEquals(Double.valueOf(35.0), flight.getMaxBaggageVolume());
+    }
+
+    @Test
+    public void testGetExcessBaggageFee() {
+        assertEquals(Double.valueOf(10.0), flight.getExcessBaggageFee());
+    }
+
+    @Test
+    public void testGetAllowedBaggageWeight() {
+        assertEquals(Double.valueOf(20.0), flight.getAllowedBaggageWeight());
+    }
+
+    @Test
+    public void testGetAllowedBaggageVolume() {
+        assertEquals(Double.valueOf(30.0), flight.getAllowedBaggageVolume());
+    }
+
+    @Test
+    public void testGetTotalCheckedIn() {
+        assertEquals(Integer.valueOf(0), flight.getTotalCheckedIn());
+    }
+
+    @Test
+    public void testGetTotalBaggageWeight() {
+        assertEquals(Double.valueOf(0.0), flight.getTotalBaggageWeight());
+    }
+
+    @Test
+    public void testGetTotalBaggageVolume() {
+        assertEquals(Double.valueOf(0.0), flight.getTotalBaggageVolume());
+    }
+
+    @Test
+    public void testGetTotalCollectedExcessBaggageFee() {
+        assertEquals(Double.valueOf(0.0), flight.getTotalCollectedExcessBaggageFee());
+    }
+
+
+    @Test
     public void testSetTotalCheckedIn() {
         flight.setTotalCheckedIn();
         assertEquals(Integer.valueOf(1), flight.getTotalCheckedIn());
